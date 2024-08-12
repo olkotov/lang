@@ -1,0 +1,39 @@
+// Oleg Kotov
+
+#include "token_type.h"
+
+std::unordered_map<TokenType, std::string> tokenTypeStrings = {
+
+	{ KEYWORD_VAR, "KEYWORD_VAR" },
+	{ KEYWORD_PRINT, "KEYWORD_PRINT" },
+	{ KEYWORD_TRUE, "KEYWORD_TRUE" },
+	{ KEYWORD_FALSE, "KEYWORD_FALSE" },
+	{ KEYWORD_NULL, "KEYWORD_NULL" },
+
+	{ IDENTIFIER, "IDENTIFIER" },
+	{ NUMBER, "NUMBER" },
+	{ STRING, "STRING "},
+
+	{ BANG, "BANG" },
+	{ BANG_EQUAL, "BANG_EQUAL" },
+	{ EQUAL_EQUAL, "EQUAL_EQUAL" },
+	{ GREATER, "GREATER" },
+	{ GREATER_EQUAL, "GREATER_EQUAL" },
+	{ LESS, "LESS" },
+	{ LESS_EQUAL, "LESS_EQUAL" },
+	
+	{ EQUAL, "EQUAL" },
+	{ OPEN_PAREN, "OPEN_PAREN" },
+	{ CLOSE_PAREN, "CLOSE_PAREN" },
+	{ PLUS, "PLUS" },
+	{ MINUS, "MINUS" },
+	{ STAR, "STAR" },
+	{ SLASH, "SLASH" },
+
+	{ QUOTE_DOUBLE, "QUOTE_DOUBLE" },
+	{ QUOTE_SINGLE, "QUOTE_SINGLE" },
+
+	{ TOKEN_EOF, "EOF" },
+	{ UNKNOWN, "UNKNOWN" }
+};
+
